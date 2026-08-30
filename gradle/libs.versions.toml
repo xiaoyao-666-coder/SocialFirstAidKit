@@ -18,7 +18,7 @@ navigation-compose = "2.8.9"
 lifecycle = "2.8.7"
 activity-compose = "1.9.3"
 core-ktx = "1.15.0"
-coroutines = "1.9.0"
+coroutines = "1.11.0"
 coil = "2.6.0"
 aliyun-nls = "2.2.1"
 
