@@ -1,0 +1,110 @@
+@startuml
+top to bottom direction
+
+skinparam shadowing false
+skinparam monochrome true
+skinparam classAttributeIconSize 0
+skinparam defaultFontName "Times New Roman"
+skinparam linetype ortho
+skinparam nodesep 45
+skinparam ranksep 55
+
+hide circle
+hide empty fields
+
+title 图3-2 “社交急救包”软件系统分析类图
+
+class "Message Assist UI" as MessageAssistUI {
+}
+
+class "Call/Meeting Assist UI" as VoiceAssistUI {
+  +displayTranscript()
+  +displaySuggestion()
+}
+
+class "Moments Creation UI" as MomentsCreateUI {
+  +displayCopywriting()
+  +displayImagePreview()
+}
+
+class "Profile/Settings UI" as ProfileSettingUI {
+  +displayUserProfile()
+  +displayPermissionStatus()
+}
+
+class "Message Assist Manager" as MessageAssistManager {
+  +generateSingleReply(text)
+  +generateContextReply(session)
+  +recognizeChatScreenshot(image)
+}
+
+class "Call/Meeting Controller" as VoiceAssistController {
+  +startListening()
+  +transcribeSpeech()
+  +generateReply()
+  +extractSummaryAndTodo()
+}
+
+class "Moments Creation Controller" as MomentsCreateController {
+  +generateCopywriting(topic, style)
+  +generateShareImage(image)
+}
+
+class "Profile/Permission Manager" as ProfileSettingManager {
+  +loadUserProfile()
+  +saveUserProfile()
+  +requestPermission(type)
+  +clearCache()
+}
+
+class "AI Service Interface" as AIService {
+  +requestReply(prompt)
+  +requestSpeechToText(audio)
+  +requestSummary(text)
+  +requestImageGeneration(prompt)
+}
+
+class "Android System/Local Data Interface" as AndroidDataService {
+  +requestSystemPermission()
+  +recordAudio()
+  +saveLocalRecord()
+}
+
+class "Chat Session" as ChatSession {
+}
+
+class "Reply History" as ReplyHistory {
+}
+
+class "Call/Meeting Record" as VoiceRecord {
+}
+
+class "Moments Content" as MomentsContent {
+}
+
+class "User Profile" as UserProfile {
+}
+
+class "App Settings" as AppSetting {
+}
+
+MessageAssistUI -down- MessageAssistManager
+VoiceAssistUI -down- VoiceAssistController
+MomentsCreateUI -down- MomentsCreateController
+ProfileSettingUI -down- ProfileSettingManager
+
+MessageAssistManager -down- ChatSession
+MessageAssistManager -down- ReplyHistory
+VoiceAssistController -down- VoiceRecord
+MomentsCreateController -down- MomentsContent
+ProfileSettingManager -down- UserProfile
+ProfileSettingManager -down- AppSetting
+
+MessageAssistManager -right- AIService
+VoiceAssistController -right- AIService
+MomentsCreateController -right- AIService
+
+VoiceAssistController -right- AndroidDataService
+ProfileSettingManager -right- AndroidDataService
+
+@enduml

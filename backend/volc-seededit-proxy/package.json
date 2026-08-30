@@ -1,0 +1,14 @@
+{
+  "name": "volc-seededit-proxy",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend proxy for Volcengine Ark SeedEdit 3.0 image editing.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "check": "node --check src/server.js"
+  }
+}

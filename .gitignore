@@ -1,0 +1,81 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+
+# Build outputs
+**/build/
+
+# Kotlin
+.kotlin/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Output files
+output*.txt
+classes.jar
+
+# Doc files
+*.docx
+
+# Captures
+captures/
+
+# Local generated docs/cache and secrets
+__pycache__/
+__vivo_*.js
+__vivo_*.css
+vivo_aigc_docs_md/vivoAPIKey.txt
+.env
+.env.*
+!.env.example
+
+# Credentials and signing material
+*.jks
+*.keystore
+key.properties
+**/*[Kk]ey*.txt
+**/*[Tt]oken*.txt
+**/*[Ss]ecret*.txt
+
+# Android release artifacts
+*.apk
+*.aab
+app/release/
+
+# Competition-provided proprietary SDKs
+# Keep the directory README, but never add the vivo on-device AAR to a public history.
+core/core-llm/libs/*.aar
+!core/core-llm/libs/README.md
+
+# Private registration and generated material
+output/
+submission/
+tmp/
+preview-png/
+preview-png.zip
+recovery-*
+*.hprof
+/.pdf
+/%SystemDrive%/
+
+# Course-only local material
+/2026年软件工程基础综合性实验要求/
+/软件工程基础实验一/
+/软件工程基础实验二/
+/软件工程基础实验三/

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">社交急救包</string>
+    <string name="accessibility_description">社交急救包需要无障碍服务权限来识别当前聊天界面内容、读取可见消息并辅助粘贴回复建议。消息内容仅用于当前功能处理；调用 AI 时会向您选择或配置的服务商发送必要上下文。</string>
+    <string name="notification_channel_assist">社交辅助</string>
+    <string name="notification_channel_service">后台服务</string>
+    <string name="privacy_policy_title">隐私政策</string>
+    <string name="privacy_policy_content">社交急救包隐私政策\n\n1. 数据收集范围\n本应用会按功能需要处理您主动输入的消息、聊天截图、OCR 识别结果、会话上下文、个人表达档案、朋友圈图片、头像、模型配置和 API Key。\n\n2. 数据使用目的\n上述数据用于生成回复建议、识别聊天截图、过滤引用消息、生成朋友圈文案和分享图、维护本地统计、执行模型连接测试和改进应用体验。\n\n3. 数据存储\n个人资料、配置、历史和缓存主要保存在设备本地。API Key 等敏感配置使用加密存储。您可以在设置中清除缓存或所有本地数据。\n\n4. 第三方服务\n调用 AI 时仅发送当前功能所需的最小必要内容。实际服务商取决于您在设置中选择或配置的模型，可能包括 vivo、MiMo、Agnes、Gemini、文心、蓝心、通义或自定义 OpenAI 兼容接口。\n\n5. 权限说明\n网络、悬浮窗、无障碍、通知监听、图片/媒体、文件读写和录音等权限仅用于对应功能，您可以随时在系统设置中撤回。\n\n6. 联系我们\n隐私相关问题可通过 zhnxnlng@gmail.com 联系我们。</string>
+</resources>
