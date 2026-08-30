@@ -1,0 +1,38 @@
+name: Bug 报告
+description: 提交可以复现的软件问题
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: 请勿填写 API Key、Token、聊天原文或其他敏感信息。
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 说明实际行为与预期行为。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开...
+        2. 点击...
+        3. 出现...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 环境
+      description: Android 版本、设备型号和提交版本。
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 已脱敏日志或截图
+      description: 请先删除密钥、账号、聊天内容和个人信息。
