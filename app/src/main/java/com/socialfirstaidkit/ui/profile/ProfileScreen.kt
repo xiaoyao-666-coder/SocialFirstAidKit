@@ -744,23 +744,6 @@ private fun AboutCard(
                 )
             }
 
-            Spacer(modifier = Modifier.height(12.dp))
-
-            Text(
-                text = "启动图标许可",
-                fontWeight = FontWeight.Medium,
-                fontSize = 13.sp
-            )
-            Spacer(modifier = Modifier.height(4.dp))
-            Text(
-                text = "The Android robot is reproduced or modified from work created and shared " +
-                    "by Google and used according to terms described in the Creative Commons " +
-                    "3.0 Attribution License. Android is a trademark of Google LLC.",
-                fontSize = 10.sp,
-                lineHeight = 14.sp,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
-            )
-
             Divider(modifier = Modifier.padding(vertical = 12.dp))
 
             // 使用指南
