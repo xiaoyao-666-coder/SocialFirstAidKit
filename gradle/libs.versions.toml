@@ -1,9 +1,9 @@
 [versions]
 agp = "8.13.0"
-kotlin = "2.0.21"
-ksp = "2.0.21-1.0.28"
+kotlin = "2.2.20"
+ksp = "2.3.11"
 compose-bom = "2024.12.01"
-hilt = "2.52"
+hilt = "2.58"
 hilt-navigation-compose = "1.2.0"
 room = "2.7.0-alpha12"
 okhttp = "4.12.0"
@@ -75,8 +75,8 @@ mlkit-face-detection = { group = "com.google.mlkit", name = "face-detection", ve
 
 # Work
 work-runtime-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "work" }
-work-hilt = { group = "androidx.hilt", name = "hilt-work", version = "1.2.0" }
-work-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version = "1.2.0" }
+work-hilt = { group = "androidx.hilt", name = "hilt-work", version = "1.4.0" }
+work-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version = "1.4.0" }
 
 # Coroutines
 coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
